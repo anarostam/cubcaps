@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  /* background-color: #720026; */
+  background-color: #821131;
+  color: #fff;
+}
+
+.header {
+  text-align: left;
+  padding: 1rem 0;
+  background-color: #4b0019;
+}
+
+.logo {
+  font-family: 'Baloo 2', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 18%;
+  padding-top: 7%;
+  color: #ffd700;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two-column layout */
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: -70px;  */
+}
+.calendar-card {
+  background: white;
+  color: #333;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 200px;
+  height: 380px; 
+  margin-left: 140px;
+}
+.calendar-card:hover{
+  transform: translateY(-10px);
+}
+.right-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card {
+  background: white;
+  color: #333;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 150px;
+  height: 180px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  text-align: center;
+  font-size: 4rem;
+  padding-right: 30px;
+  padding-top: 10px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.circle {
+  width: 29px;
+  height: 29px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: solid #821131;
+  display:right;
+  justify-content: center;
+  align-items: center;
+  position: center;
+}
+
+.circle::before {
+  content: "→"; 
+  font-size: 24px;
+  color: #821131;
+}
+.circle:hover{
+  content: "→"; 
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #821131;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #af1740; /* Adjust color if needed */
+  text-align: center;
+}
+
+.arrow-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #821131; /* Circle border color */
+  border-radius: 50%; /* Makes it circular */
+  font-size: 19px;
+  /* font-weight:; */
+  color: #821131; /* Arrow color */
+  background-color: #fff; /* Background color inside the circle */
+  margin-left: 100px;
+}
+.arrow-right:hover{
+  color:#ffffff;
+  background-color: #821131;
+}
